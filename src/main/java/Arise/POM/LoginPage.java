@@ -30,7 +30,7 @@ public class LoginPage {
         wait.until(ExpectedConditions.visibilityOf(btnSubmit)).click();
     }
     public void verifythewrongcredentials() throws Exception {
-        WebDriverWait wait=new WebDriverWait(BaseTest.driver, Duration.ofMillis(2));
+        WebDriverWait wait=new WebDriverWait(BaseTest.driver, Duration.ofMillis(2000));
         wait.until(ExpectedConditions.visibilityOf(txtLoginError));
       //  Assert.assertEquals(txtLoginError.getText(),"Your username is invalid!");
         if(!(txtLoginError.getText().contains("is invalid!"))){
