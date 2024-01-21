@@ -22,7 +22,7 @@ public class Homepage extends BaseTest {
         PageFactory.initElements(BaseTest.driver,this);
     }
    public void navigatesToLoginPage() throws Exception {
-       WebDriverWait wait=new WebDriverWait(BaseTest.driver, Duration.ofMillis(2));
+       WebDriverWait wait=new WebDriverWait(BaseTest.driver, Duration.ofMillis(2000));
        wait.until(ExpectedConditions.visibilityOf(btnPractice.get(0))).click();
        wait.until(ExpectedConditions.visibilityOf(btnLoginPage.get(0))).click();
    }
