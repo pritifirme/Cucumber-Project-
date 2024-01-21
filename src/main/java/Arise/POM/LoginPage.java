@@ -24,7 +24,7 @@ public class LoginPage {
 
     public void enterCredentials(String username,String password){
 
-        WebDriverWait wait=new WebDriverWait(BaseTest.driver, Duration.ofMillis(2));
+        WebDriverWait wait=new WebDriverWait(BaseTest.driver, Duration.ofMillis(2000));
         wait.until(ExpectedConditions.visibilityOf(inpUserName)).sendKeys("username");
         wait.until(ExpectedConditions.visibilityOf(inpPassword)).sendKeys("password");
         wait.until(ExpectedConditions.visibilityOf(btnSubmit)).click();
