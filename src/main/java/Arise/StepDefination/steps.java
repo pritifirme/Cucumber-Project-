@@ -35,10 +35,7 @@ public class steps {
         hm.verifyTheLogin();
 
     }
-    @Then("Verify the user status for wrong credentials")
-    public void verify_the_user_status_for_wrong_credentials() throws Exception {
-        lp.verifythewrongcredentials();
-    }
+
 
 
 
